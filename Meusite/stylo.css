@@ -1,0 +1,79 @@
+body {
+      background-color: #fdf6f0; /* fundo suave */
+      color: #666; /* cor suave para o texto */
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Brush Script MT', cursive; /* fonte cursiva para títulos */
+      color: #8b5e3c;
+      margin-bottom: 10px;
+    }
+
+    strong {
+      color: #000;
+      font-weight: bold;
+    }
+
+    a {
+      color: #a0522d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+   img {
+  max-width: 30%; /* menor que 50% */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin: 5px 0;
+
+    }
+
+  .container {
+    display: flex;
+    gap: 10px; /* espaço entre os botões */
+  }
+
+ .button {
+    padding: 10px 20px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+    margin-top: 50px;
+  }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: calc(100vh - 80px); /* ajusta a altura para empurrar o rodapé */
+  padding: 20px;
+}
+
+.rodape {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
