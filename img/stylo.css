@@ -1,0 +1,213 @@
+/* estilo geral do corpo */
+body {
+  background-color: #fdf6f0; /* cor de fundo suave */
+  color: #666; /* cor do texto em cinza suave */
+  font-family: 'Segoe UI', sans-serif; /* fonte padrão */
+  padding: 30px; /* espaço interno em volta do conteúdo */
+  line-height: 1.6; /* altura das linhas para melhor leitura */
+}
+
+/* Titulos*/
+h1, h2 {
+  font-family: 'Brush Script MT', cursive; /* fonte cursiva para títulos */
+  color: #8b5e3c; /* marrom elegante */
+  margin-bottom: 10px; /* espaço abaixo dos títulos */
+}
+
+/* texto em negrito*/
+strong {
+  color: #000; /* preto */
+  font-weight: bold; /* negrito */
+}
+
+/* links*/
+a {
+  color: #a0522d; /* marrom */
+  text-decoration: none; /* remove o sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; /* sublinhado ao passar o mouse */
+}
+
+/*imagens */
+img {
+  max-width: 30%; /* ocupa no máximo 30% da largura */
+  height: 150px; /* altura fixa  */
+  border-radius: 5px; /* cantos arredondados */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* sombra leve */
+  margin: 5px 0; /* espaço em cima e embaixo */
+}
+
+/* containers e botoes */
+.container {
+  display: flex; /* organiza em linha */
+  gap: 10px; /* espaço entre os itens */
+}
+
+.button {
+  padding: 10px 20px; /* espaço interno */
+  background-color: #a0522d; /* marrom */
+  color: white; /* texto branco */
+  border: none; /* sem borda */
+  border-radius: 5px; /* cantos arredondados */
+  cursor: pointer; /* cursor de mãozinha */
+  text-decoration: none; /* sem sublinhado */
+}
+
+/* rodape*/
+footer {
+  background-color: #f2f2f2; /* cinza claro */
+  text-align: center; /* centraliza texto */
+  padding: 20px; /* espaço interno */
+  font-size: 14px; /* tamanho da fonte */
+  color: #333; /* cinza escuro */
+  margin-top: 50px; /* espaço acima */
+}
+
+/* ajuste de altura*/
+html, body {
+  height: 100%; /* ocupa toda a tela */
+  margin: 0; /* remove margens padrão */
+  padding: 0; /* remove espaçamento padrão */
+}
+
+.container {
+  min-height: calc(100vh - 80px); /* ocupa quase toda a tela, menos o rodapé */
+  padding: 20px;
+}
+
+/* rodape alternativo*/
+.rodape {
+  background-color: #333; /* fundo escuro */
+  color: #fff; /* texto branco */
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* fundo com imagem*/
+body {
+  background-image: url("img/fundo.jpg"); /* imagem de fundo */
+  background-size: cover; /* cobre toda a tela */
+  background-position: center; /* centralizada */
+  background-repeat: no-repeat; /* não repete */
+  background-attachment: fixed; /* fixa ao rolar */
+}
+
+/* camadaescura sobre o fundo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* camada preta transparente */
+  z-index: -1; /* fica atrás do conteúdo */
+}
+
+ /*lins do rodape*/
+ footer a {
+  color: #0077cc; /* azul */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline; /* sublinhado ao passar o mouse */
+}
+
+/*foto de perfil*/
+.foto {
+  display: block;
+  margin: 20px auto; /* centralizada */
+  width: 150px;
+  height: auto;
+  border-radius: 8px; /* cantos arredondados */
+}
+
+/*menu */
+
+.menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.menu button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #3b1667; /* roxo escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #5e2ca5; /* roxo mais claro */
+}
+
+/* estrutura flaxivel*/
+body {
+  display: flex;
+  flex-direction: column; /* organiza em coluna */
+  min-height: 50vh; /* ocupa toda a tela */
+  margin: 0;
+}
+
+.container {
+  flex: 1; /* ocupa o espaço disponível */
+  padding: 20px;
+}
+
+/* variacoes de imagem*/
+.foto-pequena, .imagem-pequena {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* espaço entre imagens */
+}
+
+.imagens-laterais-embaixo img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imagens-laterais img {
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* quebra linha se faltar espaço */
+}
+.galeria img,
+.imagens-laterais_embaixo img {
+  transition: transform 0.3s ease; /* animação suave */
+  cursor: pointer; /* mostra que é clicável */
+}
+
+.galeria img:hover,
+.imagens-laterais_embaixo img:hover {
+  transform: scale(1.2); /* aumenta 20% */
+  z-index: 2; /* fica por cima das outras */
+}
+#contato {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#contato a {
+  color: #3b1667; /* cor personalizada */
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
