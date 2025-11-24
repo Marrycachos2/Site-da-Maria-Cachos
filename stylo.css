@@ -123,6 +123,10 @@ main {
 
 #contato a:hover {
   text-decoration: underline;
+    max-width: 100%;   /* ocupa no máximo a largura do container */
+  height: auto;      /* mantém a proporção da imagem */
+  display: block;    /* evita espaços extras */
+  margin: 0 auto;  
 }
 
 /* Footer */
@@ -186,4 +190,16 @@ footer a {
   .modal-content {
     width: 100%;
   }
+}
+.container {
+  max-width: 800px; /* largura máxima do bloco */
+  margin: 0 auto;   /* centraliza na página */
+  padding: 20px;
+}
+.foto-destaque {
+  width: 600px;   /* define uma largura fixa */
+  max-width: 100%; /* não ultrapassa o tamanho da tela */
+  height: auto;   /* mantém proporção */
+  display: block;
+  margin: 0 auto; /* centraliza */
 }
